@@ -1,5 +1,4 @@
 @charset "UTF-8";
-@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
 
 #carouselExampleCaptions {
     img {
@@ -14,31 +13,39 @@
 
 .navbar {
     position: sticky;
-    top:0;
-    height: 3.5rem;/* 該區塊需與字體高度變化才使用rem當單位 */
+    top: 0;
+    height: 3.5rem; /* 該區塊需與字體高度變化才使用rem當單位 */
 
     .navbar-brand {
+
         img {
             height: 2rem;
         }
     }
 
-    .navbar-collapse {
-        .icon-box {
-            display: flex;
-            list-style: none;
-            margin-bottom: 0; /* 移除bs-ul預設的下方空白 */
+    .icon-box {
+        display: flex;
+        margin-bottom: 0; /* 移除bs-ul預設的下方空白 */
 
-            /* a
-            {
-            color: white;
-            } */
-        }
-
-        .btn {
-            white-space: nowrap; /* 不換行 */
-            display: flex;
-            align-items: center;
-        }
+        /* a
+            {color: white;} */
     }
+
+    .btn {
+        white-space: nowrap; /* 不換行 */
+        display: flex;
+        align-items: center;
+    }
+}
+
+#all {
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    @media(min-width:1200px){
+    .col-my-5{
+        width: 20%;
+    }}
 }
